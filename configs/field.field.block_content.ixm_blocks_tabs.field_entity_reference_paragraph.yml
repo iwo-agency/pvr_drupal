@@ -1,0 +1,49 @@
+uuid: c900ebce-c245-4649-9e8d-dc48b0939c2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ixm_blocks_tabs
+    - field.storage.block_content.field_entity_reference_paragraph
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: qRT15uvlc3T0UKEolSPwxGCtSJHDzhMazhSs0TzixWU
+id: block_content.ixm_blocks_tabs.field_entity_reference_paragraph
+field_name: field_entity_reference_paragraph
+entity_type: block_content
+bundle: ixm_blocks_tabs
+label: 'Tab Item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+    target_bundles_drag_drop:
+      ixm_blocks_accordion_item:
+        weight: 8
+        enabled: false
+      ixm_blocks_card:
+        weight: 9
+        enabled: false
+      ixm_blocks_carousel_item:
+        weight: 10
+        enabled: false
+      ixm_blocks_cta_icon_item:
+        weight: 11
+        enabled: false
+      ixm_blocks_ping_pong_item:
+        weight: 12
+        enabled: false
+      ixm_blocks_statistics_item:
+        weight: 13
+        enabled: false
+      ixm_blocks_tab_item:
+        weight: 14
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,19 @@
+uuid: f8da9214-a58c-42cb-b8ab-df85e96a471d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_usdt
+    - paragraphs.paragraphs_type.hero_block_form
+id: paragraph.hero_block_form.field_usdt
+field_name: field_usdt
+entity_type: paragraph
+bundle: hero_block_form
+label: 'USDT (TRC20)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

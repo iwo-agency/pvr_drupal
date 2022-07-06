@@ -1,0 +1,24 @@
+uuid: 08c41943-3ff6-4f36-a5c4-05bba86d9533
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - language
+  theme:
+    - pvr
+third_party_settings:
+  block_class:
+    classes: 'nav order-4 order-lg-2'
+id: languageswitcher
+theme: pvr
+region: navigation
+weight: -4
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

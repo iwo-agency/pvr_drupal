@@ -1,0 +1,31 @@
+uuid: cd7c321f-0a11-40cd-b9d2-7e9b8de1cfca
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_class
+    - system
+  theme:
+    - pvr
+third_party_settings:
+  block_class:
+    classes: 'me-lg-4 pt-1 order-3 order-lg-1'
+_core:
+  default_config_hash: sOBfLFUB4t3yuAG5cmsbqVnN31761mx5SUHgrjS3Lpk
+id: pvr_main_menu
+theme: pvr
+region: navigation
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 9
+  expand_all_items: false
+visibility: {  }

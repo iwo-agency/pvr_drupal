@@ -1,0 +1,40 @@
+uuid: 3ae50cce-6323-4529-a669-2acac7197f88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page.field_meta_tags
+    - field.field.node.basic_page.field_page_blocks
+    - node.type.basic_page
+  module:
+    - entity_reference_revisions
+    - metatag
+    - user
+id: node.basic_page.default
+targetEntityType: node
+bundle: basic_page
+mode: default
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_page_blocks:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

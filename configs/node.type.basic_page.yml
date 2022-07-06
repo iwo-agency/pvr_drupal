@@ -1,0 +1,40 @@
+uuid: 9381e8c9-dcde-4a15-9449-a805aa362e9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_redirect
+    - menu_ui
+third_party_settings:
+  entity_redirect:
+    redirect:
+      anonymous:
+        active: false
+        destination: default
+        url: ''
+        external: ''
+      add:
+        active: false
+        destination: default
+        url: ''
+        external: ''
+      edit:
+        active: false
+        destination: default
+        url: ''
+        external: ''
+      delete:
+        active: false
+        destination: default
+        url: ''
+        external: ''
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Page
+type: basic_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

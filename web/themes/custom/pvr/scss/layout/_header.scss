@@ -1,0 +1,6 @@
+.bg-header {
+  background-color: transparent;
+  @include media-breakpoint-down(lg) {
+    background-color: $white;
+  }
+}

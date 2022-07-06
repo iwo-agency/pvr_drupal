@@ -1,0 +1,10 @@
+uuid: 76b2e17f-b6d5-4882-8637-4537d18886b7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VUx_rb2vpE0lUTfAJvC-xt_Pu5FB1HqwXmByitHXPso
+id: ixm_blocks_table
+label: Table
+revision: 0
+description: 'A component for adding responsive tables.'

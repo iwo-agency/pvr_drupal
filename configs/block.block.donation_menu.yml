@@ -1,0 +1,29 @@
+uuid: ad97c7ea-7a64-4e00-afee-9b1abefcb39f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility-menu
+  module:
+    - block_class
+    - system
+  theme:
+    - pvr
+third_party_settings:
+  block_class:
+    classes: 'order-1 order-lg-3'
+id: donation_menu
+theme: pvr
+region: navigation
+weight: -3
+provider: null
+plugin: 'system_menu_block:utility-menu'
+settings:
+  id: 'system_menu_block:utility-menu'
+  label: 'Donation Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

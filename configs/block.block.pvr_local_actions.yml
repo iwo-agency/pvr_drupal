@@ -1,0 +1,25 @@
+uuid: 14489336-a95e-4de5-8a29-a3aa489e3709
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - pvr
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: 72nlwRjqiXBAwD4_Wzf9YVMhGeEnqWlHF8NS6KoI7Js
+id: pvr_local_actions
+theme: pvr
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

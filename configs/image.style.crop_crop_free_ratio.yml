@@ -1,0 +1,18 @@
+uuid: 6ca4b1c5-fff8-4182-8a33-12594f2d1858
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_free_ratio
+  module:
+    - crop
+name: crop_crop_free_ratio
+label: 'Cropped: Free crop'
+effects:
+  73b79e2f-32cd-4bdb-91d5-557bed41fca2:
+    uuid: 73b79e2f-32cd-4bdb-91d5-557bed41fca2
+    id: crop_crop
+    weight: null
+    data:
+      crop_type: crop_free_ratio
+      automatic_crop_provider: null

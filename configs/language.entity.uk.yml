@@ -1,0 +1,9 @@
+uuid: 02a7bc15-7814-4837-a3c7-8f5e6e12746a
+langcode: uk
+status: true
+dependencies: {  }
+id: uk
+label: UA
+direction: ltr
+weight: -10
+locked: false

@@ -1,0 +1,27 @@
+uuid: 2c6fbb20-21e5-4114-8871-bf5e94d31652
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - pvr
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: bqcUyJfypWnp1brZbJafXVGafynv0TAEfKEDh4893qM
+id: pvr_local_tasks
+theme: pvr
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

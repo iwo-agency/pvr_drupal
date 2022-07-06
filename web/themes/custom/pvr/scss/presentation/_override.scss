@@ -1,0 +1,17 @@
+.navbar-light .navbar-nav .nav-link {
+  color: $navbar-light-color;
+
+  &:hover,
+  &.active,
+  &.is-active {
+    color: $navbar-light-hover-color;
+  }
+}
+
+.gin-secondary-toolbar {
+  .placeholder {
+    cursor: unset;
+    background-color: unset;
+    opacity: unset;
+  }
+}

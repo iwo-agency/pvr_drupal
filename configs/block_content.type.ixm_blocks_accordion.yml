@@ -1,0 +1,10 @@
+uuid: 2b39f3fd-8af1-4033-ab90-b3fcc2693e62
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9lNq-RZPS5DlZPhIdEbIJoRjDrG_7T3mb0l5FDy-cS0
+id: ixm_blocks_accordion
+label: Accordion
+revision: 0
+description: 'A component for adding custom Accordions.'

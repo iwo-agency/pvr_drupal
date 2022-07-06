@@ -1,0 +1,19 @@
+uuid: 5ecc22de-7417-4e41-b36a-b6c4f0ad638e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_btc
+    - paragraphs.paragraphs_type.hero_block_form
+id: paragraph.hero_block_form.field_btc
+field_name: field_btc
+entity_type: paragraph
+bundle: hero_block_form
+label: BTC
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

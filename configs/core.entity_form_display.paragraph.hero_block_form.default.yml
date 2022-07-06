@@ -1,0 +1,68 @@
+uuid: 78932cd4-8216-44c7-af90-a563b108fb66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_block_form.field_btc
+    - field.field.paragraph.hero_block_form.field_eth
+    - field.field.paragraph.hero_block_form.field_fondy_api_key
+    - field.field.paragraph.hero_block_form.field_sub_title
+    - field.field.paragraph.hero_block_form.field_title
+    - field.field.paragraph.hero_block_form.field_usdt
+    - paragraphs.paragraphs_type.hero_block_form
+id: paragraph.hero_block_form.default
+targetEntityType: paragraph
+bundle: hero_block_form
+mode: default
+content:
+  field_btc:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_eth:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fondy_api_key:
+    type: string_textfield
+    weight: 5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sub_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_usdt:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

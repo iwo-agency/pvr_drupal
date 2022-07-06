@@ -1,0 +1,24 @@
+.paragraph--type--hero-block,
+.paragraph--type--hero-block-form {
+  background: rgba($blue, .07);
+  background: linear-gradient(119deg, rgba($blue, .09), hsla(0, 0%, 97.6%, .938813) 32%, rgba($yellow, .1) 66%, rgba($blue, .07));
+  margin-top: -110px !important;
+  padding-top: 120px !important;
+  padding-bottom: 40px !important;
+
+  .donation {
+    max-width: 400px;
+  }
+
+  svg {
+    max-width: 480px;
+    transform: rotate(-180deg);
+  }
+
+  #fondy {
+    input,
+    select {
+      height: 35px;
+    }
+  }
+}

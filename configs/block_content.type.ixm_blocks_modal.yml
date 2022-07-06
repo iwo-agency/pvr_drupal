@@ -1,0 +1,10 @@
+uuid: 1eb1bfeb-6b03-466b-b94f-7099de31cda2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Z3gs9c2n3J20lXYUk36fQxSiiC4SjcrQwNebI_0E1YE
+id: ixm_blocks_modal
+label: Modal
+revision: 0
+description: 'A component for adding custom Modals.'

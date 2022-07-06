@@ -1,0 +1,19 @@
+uuid: 1fe4c04d-e907-4e8d-83ff-47dbac9caaaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fondy_api_key
+    - paragraphs.paragraphs_type.hero_block_form
+id: paragraph.hero_block_form.field_fondy_api_key
+field_name: field_fondy_api_key
+entity_type: paragraph
+bundle: hero_block_form
+label: 'Fondy API Key'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

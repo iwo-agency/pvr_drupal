@@ -1,0 +1,25 @@
+uuid: cdabc04e-f1c9-4fa9-bcde-8b6caad9c3e8
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+  theme:
+    - pvr
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: 5p6onlbwg8IfOoLBo-hjKA7w3Wmb37ZZxGGxZp5vVm8
+id: pvr_page_title
+theme: pvr
+region: content
+weight: 1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

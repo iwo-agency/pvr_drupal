@@ -1,0 +1,18 @@
+uuid: 460a43a8-5e67-4311-9cc4-3058553d1fcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.crop_4_3
+  module:
+    - crop
+name: crop_crop_4_3
+label: 'Cropped: Crop 4:3'
+effects:
+  af2d7a56-1e1b-4e6d-a32a-d87a641f1829:
+    uuid: af2d7a56-1e1b-4e6d-a32a-d87a641f1829
+    id: crop_crop
+    weight: null
+    data:
+      crop_type: crop_4_3
+      automatic_crop_provider: null

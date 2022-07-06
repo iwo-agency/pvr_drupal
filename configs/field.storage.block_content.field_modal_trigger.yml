@@ -1,0 +1,23 @@
+uuid: 09f95c25-6dc7-4357-9029-8d62dac771e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: KkFAh_fxP5BZ0QQFSoNpyoEIgKVY047l9mas1J91Dms
+id: block_content.field_modal_trigger
+field_name: field_modal_trigger
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

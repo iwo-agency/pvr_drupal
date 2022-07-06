@@ -1,0 +1,19 @@
+uuid: a9460de5-db22-4c55-9c37-92ce5e1a2611
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.hero_block_form
+id: paragraph.hero_block_form.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: hero_block_form
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

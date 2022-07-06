@@ -1,0 +1,26 @@
+uuid: 38c0d459-b7b8-4b65-a101-2d6615a00528
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - pvr
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: KpBqqBIyNPTNavLklXPC1-cUAeuwAbBOsrvGussFh1E
+id: pvr_breadcrumbs
+theme: pvr
+region: content_top
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

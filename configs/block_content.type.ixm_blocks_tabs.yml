@@ -1,0 +1,10 @@
+uuid: 9bffd053-cbe9-4585-afbc-cc03617a7e59
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6ao9jVh7Yp3RCOvoHKrMNZwwceRnrgmiaAeY7mcODCY
+id: ixm_blocks_tabs
+label: Tabs
+revision: 0
+description: 'A component for adding custom Tabs.'

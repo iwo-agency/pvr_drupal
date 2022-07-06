@@ -1,0 +1,29 @@
+uuid: 85e4cee8-8012-4446-95c7-60c2471e5fab
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - pvr
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: lOdPdXWPbE5QLAuSRidWj90DTENmQzKLeNjvr64juyo
+id: pvr_branding
+theme: pvr
+region: header_top
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

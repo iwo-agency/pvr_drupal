@@ -1,0 +1,32 @@
+uuid: 1379a4e5-4e82-4816-85b6-493834320168
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_blocks
+    - node.type.basic_page
+  module:
+    - entity_reference_revisions
+id: node.basic_page.field_page_blocks
+field_name: field_page_blocks
+entity_type: node
+bundle: basic_page
+label: 'Page blocks'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 1
+    target_bundles_drag_drop:
+      hero_block:
+        weight: 3
+        enabled: false
+      ixm_blocks_accordion_item:
+        weight: 3
+        enabled: false
+field_type: entity_reference_revisions

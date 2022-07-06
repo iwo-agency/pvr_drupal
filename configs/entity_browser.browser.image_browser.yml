@@ -1,0 +1,55 @@
+uuid: ed5eae33-3b98-48a8-98bb-c34c73e7c497
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.image_browser
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+_core:
+  default_config_hash: hQwJmE0YVnT4OoarVqAaXQ_u1m1ZboQN7bb70mIGL-I
+name: image_browser
+label: 'Image browser'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select Image(s)'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  e7f78bae-bc54-4234-9d09-945dd8fc0398:
+    id: view
+    uuid: e7f78bae-bc54-4234-9d09-945dd8fc0398
+    label: Library
+    weight: -10
+    settings:
+      submit_text: Select
+      auto_select: false
+      view: image_browser
+      view_display: entity_browser
+  a8a21c09-71b8-4f5c-83e5-31589f28f668:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: a8a21c09-71b8-4f5c-83e5-31589f28f668
+    label: Upload
+    weight: 3
+    settings:
+      submit_text: 'Select image'
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 500M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      media_type: image
+      form_mode: media_browser

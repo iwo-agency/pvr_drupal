@@ -1,0 +1,5 @@
+content:
+  field_entity_reference_paragraph:
+    settings:
+      title: Параграф
+      title_plural: Параграфы

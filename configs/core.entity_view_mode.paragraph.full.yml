@@ -1,0 +1,14 @@
+uuid: 104b7af4-421a-41db-82f5-3d44e45b464e
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+    - paragraphs
+third_party_settings:
+  lightning_core:
+    description: ''
+id: paragraph.full
+label: Full
+targetEntityType: paragraph
+cache: true

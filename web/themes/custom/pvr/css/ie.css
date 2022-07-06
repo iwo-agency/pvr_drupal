@@ -1,0 +1,8 @@
+/**
+ * Custom IE styles, didn't warrant extra partials for now, so all here.
+ */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .ie-doesnt-work {
+    position: relative; } }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImllLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7RUFFRTtBQUNGO0VBQ0U7SUFDRSxrQkFBa0IsRUFBRSxFQUFFIiwiZmlsZSI6ImllLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQ3VzdG9tIElFIHN0eWxlcywgZGlkbid0IHdhcnJhbnQgZXh0cmEgcGFydGlhbHMgZm9yIG5vdywgc28gYWxsIGhlcmUuXG4gKi9cbkBtZWRpYSBhbGwgYW5kICgtbXMtaGlnaC1jb250cmFzdDogbm9uZSksICgtbXMtaGlnaC1jb250cmFzdDogYWN0aXZlKSB7XG4gIC5pZS1kb2VzbnQtd29yayB7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlOyB9IH1cbiJdfQ== */

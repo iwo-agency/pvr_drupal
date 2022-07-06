@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 75d872b8-7128-4ce2-beae-314dacb973e9
+name: 'Міжнародний Благодійний Фонд "ПОВЕРНЕННЯ"'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: uk
+mail_notification: ''

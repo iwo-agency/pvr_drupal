@@ -1,0 +1,23 @@
+uuid: b5407a58-aefa-4363-ac5d-bbf7f565f189
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_in_library
+    - media.type.image_with_crop
+id: media.image_with_crop.field_media_in_library
+field_name: field_media_in_library
+entity_type: media
+bundle: image_with_crop
+label: 'Show in media library'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Shown in media library'
+  off_label: 'Hidden in media library'
+field_type: boolean

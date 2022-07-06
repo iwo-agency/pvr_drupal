@@ -1,0 +1,35 @@
+uuid: 95f1cf4f-a562-4734-a10f-6dacdf73014d
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_redirect
+third_party_settings:
+  entity_redirect:
+    redirect:
+      anonymous:
+        active: false
+        destination: default
+        url: ''
+        external: ''
+      add:
+        active: false
+        destination: default
+        url: ''
+        external: ''
+      edit:
+        active: false
+        destination: default
+        url: ''
+        external: ''
+      delete:
+        active: false
+        destination: default
+        url: ''
+        external: ''
+id: hero_block
+label: 'Hero Block'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }
