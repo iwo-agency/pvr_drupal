@@ -54,6 +54,9 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6 col-12 text-center">
             <h1 class="text-center">{{ content.field_title }}</h1>
+{#            <svg width="100%" height="34" viewBox="0 0 487 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-4 mb-0 mx-auto">#}
+{#              <path d="M4 30C73.6307 10.3798 266.914 -17.0885 483 30" stroke="#0158b5" stroke-width="8" stroke-linecap="round"></path>#}
+{#            </svg>#}
             <svg width="100%" height="34" viewBox="0 0 487 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="my-4 mx-auto">
               <path d="M4 30C73.6307 10.3798 266.914 -17.0885 483 30" stroke="#F7CF00" stroke-width="8" stroke-linecap="round"></path>
             </svg>
@@ -63,7 +66,7 @@
           <div class="donation col-sm-12 col-md-6 col-lg-6 col-12 ms-md-auto">
 
             {% if content.field_btc is not empty %}
-            <div class="card bg-white w-100 border-0 mb-2">
+            <div class="card bg-white w-100 border-0 mb-2 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title fs-6">{{ 'BTC'|t }}</h5>
                 <h6 class="card-subtitle mb-2 fs-6">{{ content.field_btc }}</h6>
@@ -72,7 +75,7 @@
             {% endif %}
 
             {% if content.field_eth is not empty %}
-            <div class="card bg-white w-100 border-0 mb-2">
+            <div class="card bg-white w-100 border-0 mb-2 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title fs-6">{{ 'ETH'|t }}</h5>
                 <h6 class="card-subtitle mb-2 fs-6">{{ content.field_eth }}</h6>
@@ -81,7 +84,7 @@
             {% endif %}
 
             {% if content.field_usdt is not empty %}
-              <div class="card bg-white w-100 border-0 mb-2">
+              <div class="card bg-white w-100 border-0 mb-2 shadow-sm">
               <div class="card-body">
                 <h5 class="card-title fs-6">{{ 'USDT (TRC20)'|t }}</h5>
                 <h6 class="card-subtitle mb-2 fs-6">{{ content.field_usdt }}</h6>
@@ -90,7 +93,7 @@
             {% endif %}
 
             {% if content.field_fondy_api_key is not empty %}
-              <div class="card bg-white w-100 border-0 mb-2">
+              <div class="card bg-white w-100 border-0 mb-2 shadow-sm">
               <div class="card-body text-end">
                 <h5 class="card-title fs-6 text-start">{{ 'Visa  & MasterCard'|t }}</h5>
                 <form id="fondy" class="d-flex flex-row" name="tocheckout" method="POST" action="https://pay.fondy.eu/api/checkout/redirect/">
@@ -98,8 +101,8 @@
                   <input type="hidden" name="response_url" value="{{ url('<current>') }}">
                   <input type="hidden" name="order_id" value="test4207135583">
                   <input type="hidden" name="order_desc" value="Donation">
-                  <input type="text" class="text-end me-2 pe-1" maxlength="10" size="10" name="amount" value="100">
-                  <select name="currency">
+                  <input type="text" class="text-end me-2 pe-1 w-100" maxlength="10" size="5" name="amount" value="100" placeholder="1000">
+                  <select name="currency" class="me-2">
                     <option value="UAH">{{ 'UAH' }}</option>
                     <option value="USA">{{ 'USA' }}</option>
                     <option value="EURO">{{ 'EURO' }}</option>
