@@ -33,9 +33,9 @@
 #}
 {% if links -%}
   <select class="selectpicker form-select-sm border-0 me-5 ps-0 ps-lg-1 mb-3 mb-lg-0" data-width="fit" onchange="location = this.value;">
-    {%- for item in links -%}
+    {%- for key, item in links -%}
       {%- if item.link -%}
-         <option value="{{ url(item.link['#url'].getRouteName(), item.link['#url'].getRouteParameters(), item.link['#options']) }}">{{ item.link['#title'] }}</option>
+        <option value="{{ url(item.link['#url'].getRouteName(), item.link['#url'].getRouteParameters(), item.link['#options']) }}" {{ item.attributes }}>{{ item.link['#title'] }}</option>
       {%- endif -%}
     {%- endfor -%}
   </select>
