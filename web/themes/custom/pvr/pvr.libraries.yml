@@ -8,6 +8,7 @@ global-theming:
       css/styles.css: {  },
       css/ie.css: {  },
       '//fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,700;1,500&family=Roboto:wght@100;300;400;700&display=swap': { type: external, minified: true }
+      '//portal.fondy.eu/mportal/static/css/button.css': { type: external, minified: true }
     }
   dependencies:
     - core/jquery

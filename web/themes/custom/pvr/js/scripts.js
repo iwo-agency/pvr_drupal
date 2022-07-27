@@ -26,13 +26,4 @@
     }
   };
 
-  Drupal.behaviors.fondyAmount = {
-    attach: function (context, settings) {
-      $('#amount_user').change(function() {
-        $('#amount').val($(this).val() * 100);
-        console.log($(this).val() * 100);
-      });
-    }
-  };
-
 })(jQuery, Drupal, drupalSettings);
