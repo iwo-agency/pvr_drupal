@@ -75,3 +75,36 @@ function pvr_preprocess_links__language_block(&$variables) {
 function pvr_preprocess(&$variables, $hook) {
   $variables['base_path'] = base_path();
 }
+
+/**
+ * Implements template_preprocess_paragraph().
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An array of elements to display in view mode.
+ *   - paragraph: The paragraph object.
+ *   - view_mode: View mode; e.g., 'full', 'teaser'...
+ */
+
+function pvr_preprocess_paragraph(&$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+  $paragraph = $variables['paragraph'];
+  // Get the type
+  $parentBundle = $paragraph->bundle();
+  if($parentBundle === 'hero_block_form') {
+    $merchant_id = '1507254';
+    $password = $paragraph->field_fondy_api_key->value;
+
+    $variables['signature'] = _pvr_signature($merchant_id, $password);
+  }
+}
+
+function _pvr_signature($merchant_id, $password, $params = []) {
+  $params['merchant_id'] = $merchant_id;
+  $params = array_filter($params, 'strlen');
+  ksort($params);
+  $params = array_values($params);
+  array_unshift($params, $password);
+  $params = join('|', $params);
+  return (sha1($params));
+}

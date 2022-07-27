@@ -99,16 +99,17 @@
                 <form id="fondy" class="d-flex flex-row" name="tocheckout" method="POST" action="https://pay.fondy.eu/api/checkout/redirect/">
                   <input type="hidden" name="server_callback_url" value="{{ url('<current>') }}">
                   <input type="hidden" name="response_url" value="{{ url('<current>') }}">
-                  <input type="hidden" name="order_id" value="test4207135583">
-                  <input type="hidden" name="order_desc" value="Donation">
-                  <input type="text" class="text-end me-2 pe-1 w-100" maxlength="10" size="5" name="amount" value="100" placeholder="1000">
+                  <input type="hidden" name="order_id" value="{{ date().timestamp }}">
+                  <input type="hidden" name="order_desc" value="{{ 'Благодійна допомога'|t }}">
+                  <input type="text" id="amount_user" class="text-end me-2 pe-1 w-100" maxlength="10" size="5" name="amount_user" value="100" placeholder="100">
+                  <input type="hidden" id="amount" name="amount" value="100">
                   <select name="currency" class="me-2">
                     <option value="UAH">{{ 'UAH' }}</option>
                     <option value="USA">{{ 'USA' }}</option>
                     <option value="EURO">{{ 'EURO' }}</option>
                   </select>
-                  <input type="hidden" name="signature" value="{{ content.field_fondy_api_key.value }}">
-                  <input type="hidden" name="merchant_id" value="1">
+                  <input type="hidden" name="signature" value="{{ signature }}">
+                  <input type="hidden" name="merchant_id" value="1507254">
                   <button type="button" onclick="document.getElementById('fondy').submit();" class="ms-auto btn btn-primary">{{ "Підтримати"|t }}</button>
                 </form>
               </div>
